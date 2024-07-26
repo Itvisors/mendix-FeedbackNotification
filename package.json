@@ -1,7 +1,7 @@
 {
   "name": "feedbacknotification",
   "widgetName": "FeedbackNotification",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Widget used to add notifications to your application. Based on https://github.com/fkhadra/react-toastify",
   "copyright": "Aiden (2024)",
   "author": "Johan Munneke",
@@ -29,14 +29,14 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "react-toastify": "^9.1.2"
+    "react-toastify": "^10.0.5"
   },
   "resolutions": {
-    "react": "18.2.0",
+    "react": "^18.2.0",
     "react-native": "0.72.7"
   },
   "overrides": {
-    "react": "18.2.0",
+    "react": "^18.2.0",
     "react-native": "0.72.7"
   }
 }
