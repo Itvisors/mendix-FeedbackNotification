@@ -100,6 +100,10 @@ Theme can be "light", "dark" or "colored". Make sure you write it correctly.</de
                 <description>Limit amount of notifications to be shown at the same time. 0 means no limit.</description>
                 <returnType type="Integer"/>
             </property>
+            <property key="stacked" type="boolean" required="true" defaultValue="false">
+                <caption>Stacked Notifications</caption>
+                <description>Whether or not to stack notifications. Note that if you use this together with auto closing after X ms, the timer starts when the notification is added to the stack.</description>
+            </property>
         </propertyGroup>
         <propertyGroup caption="Close notification">
             <property key="autoClose" type="expression" dataSource="datasourceNotifications" required="true" defaultValue="5000">

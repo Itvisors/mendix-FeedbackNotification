@@ -37,6 +37,7 @@ The widget needs a data source and a context object that can be refreshed when t
 - Right to left: Show content right to left.
 - Newest on top: Show newest notification on top.
 - Limit: Limit amount of notifications to be shown at the same time. 0 means no limit.
+- Stacked Notifications: Whether or not to stack notifications. Note that if you use this together with auto closing after X ms, the timer starts when the notification is added to the stack.
 
 ### Close notification
 - Close after: Notification will be closed after this time (in ms). Set to 0 to let the user close it himself. 

@@ -119,6 +119,7 @@ export default function FeedbackNotification(props) {
     return (
         <ToastContainer
             position={getPosition()}
+            stacked={props.stacked}
             closeButton={props.closeButton}
             closeOnClick={props.closeOnClick}
             draggable={props.draggable}
