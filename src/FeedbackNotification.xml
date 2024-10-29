@@ -128,5 +128,12 @@ Theme can be "light", "dark" or "colored". Make sure you write it correctly.</de
                 <description>The percentage of the notifications width that the notification can be dragged after which it will be closed.</description>
             </property>            
         </propertyGroup>
+        <propertyGroup caption="Accessibility">
+            <property key="role" type="expression" required="true" defaultValue="'alert'">
+                <caption>Role</caption>
+                <description>Accessibility needs an Alert role, so screen readers will read the text of the notification</description>
+                <returnType type="String" />
+            </property>
+        </propertyGroup>
     </properties>
 </widget>

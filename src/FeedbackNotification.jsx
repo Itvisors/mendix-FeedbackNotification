@@ -101,15 +101,15 @@ export default function FeedbackNotification(props) {
     useEffect(() => {
         // If new items retrieved, create toast messages
         if (props.datasourceNotifications.items) {
-            for (const itemIndex in props.datasourceNotifications.items) {
-                const notification = props.datasourceNotifications.items[itemIndex];
+            for (const notification of props.datasourceNotifications.items) {
                 toast(getNotificationText(notification), {
                     type: getNotificationType(notification),
                     autoClose: getNotificationAutoClose(notification),
                     className: getNotificationClassName(notification),
                     onClose: () => executeCloseAction(notification),
                     theme: getNotificationTheme(notification),
-                    icon: getNotificationShowIcon(notification)
+                    icon: getNotificationShowIcon(notification),
+                    role: props.role.value
                 });
                 executeShowAction(notification);
             }
@@ -131,6 +131,7 @@ export default function FeedbackNotification(props) {
             rtl={props.rtl}
             newestOnTop={props.newestOnTop}
             limit={props.limit.value && props.limit.value > 0 ? props.limit.value : undefined}
+            role={props.role.value}
         />
     );
 }
