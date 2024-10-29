@@ -18,6 +18,7 @@ The widget needs a data source and a context object that can be refreshed when t
 
 ### General
 - Data Source: Retrieve notifications to show
+- Display Type: Simple or Complex. For simple mode, you can select a string attribute as the Notification Text. For complex mode, an area to place widgets into will appear on below the widget.
 - Notification Text: Attribute used for the notification text.
 - Type: Can be used to set a type for the toast message, which will change the styling and add a icon. Type can be "info", "success", "warning", "error" or "default". Make sure you write it correctly.
 - Theme: Can be used to set a theme for the toast message, which will change the styling. Theme can be "light", "dark" or "colored". Make sure you write it correctly.
@@ -46,4 +47,5 @@ The widget needs a data source and a context object that can be refreshed when t
 - Draggable: Whether or not the notification can be dragged to close it.
 - Draggable percent: The percentage of the notifications width that the notification can be dragged after which it will be closed.
 
-
+### Accessibility
+- Role: required for accessibility compliance, so screen readers will read the text of the notification
