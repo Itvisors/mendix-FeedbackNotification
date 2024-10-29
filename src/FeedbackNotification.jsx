@@ -20,7 +20,9 @@ export default function FeedbackNotification(props) {
         }
     };
 
-    const getNotificationText = notification => props.notificationText.get(notification).value;
+    const getNotificationText = notification => props.displayType === "SIMPLE" ? 
+        props.notificationText.get(notification).value :
+        props.customContent.get(notification);
 
     const getNotificationShowIcon = notification => {
         const showIcon = props.showIcon.get(notification).value;
