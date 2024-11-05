@@ -68,7 +68,7 @@ export const getPreview = (_values, isDarkMode) => {
             {
                 type: "DropZone",
                 property: _values.customContent,
-                placeholder: "Place your custom option content here"
+                placeholder: "Place your custom notification content here"
             }
         ]
     };
