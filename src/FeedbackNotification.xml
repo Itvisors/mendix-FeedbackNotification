@@ -12,12 +12,24 @@
                 <caption>Data source</caption>
                 <description />
             </property>
+            <property key="displayType" type="enumeration" required="true" defaultValue="SIMPLE">
+                <caption>Display type</caption>
+                <description></description>
+                <enumerationValues>
+                    <enumerationValue key="SIMPLE">Simple</enumerationValue>
+                    <enumerationValue key="CUSTOM">Custom Content</enumerationValue>
+                </enumerationValues>
+            </property>
             <property key="notificationText" type="attribute" dataSource="datasourceNotifications" required="true">
                 <caption>Notification Text</caption>
                 <description>Text to show in the notification.</description>
                 <attributeTypes>
                     <attributeType name="String"/>
                 </attributeTypes>
+            </property>
+            <property key="customContent" type="widgets" required="true" dataSource="datasourceNotifications">
+                <caption>Custom content</caption>
+                <description></description>
             </property>
             <property key="notificationType" type="expression" dataSource="datasourceNotifications" required="true" defaultValue="'info'">
                 <caption>Type</caption>
@@ -127,6 +139,13 @@ Theme can be "light", "dark" or "colored". Make sure you write it correctly.</de
                 <caption>Draggable percent</caption>
                 <description>The percentage of the notifications width that the notification can be dragged after which it will be closed.</description>
             </property>            
+        </propertyGroup>
+        <propertyGroup caption="Accessibility">
+            <property key="role" type="expression" required="true" defaultValue="'alert'">
+                <caption>Role</caption>
+                <description>Accessibility needs an Alert role, so screen readers will read the text of the notification</description>
+                <returnType type="String" />
+            </property>
         </propertyGroup>
     </properties>
 </widget>

@@ -1,7 +1,7 @@
 {
   "name": "feedbacknotification",
   "widgetName": "FeedbackNotification",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Widget used to add notifications to your application. Based on https://github.com/fkhadra/react-toastify",
   "copyright": "Aiden (2024)",
   "author": "Johan Munneke",
