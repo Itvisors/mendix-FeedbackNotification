@@ -1,9 +1,6 @@
 import { hidePropertiesIn } from "@mendix/pluggable-widgets-tools";
 
-export function getProperties(
-    _values,
-    defaultProperties /* , target: Platform*/
-) {
+export function getProperties(_values, defaultProperties /* , target: Platform*/) {
     switch (_values.displayType) {
         case "SIMPLE": {
             hidePropertiesIn(defaultProperties, _values, ["customContent"]);
@@ -11,6 +8,9 @@ export function getProperties(
         }
         case "CUSTOM": {
             hidePropertiesIn(defaultProperties, _values, ["notificationText"]);
+            break;
+        }
+        default: {
             break;
         }
     }
